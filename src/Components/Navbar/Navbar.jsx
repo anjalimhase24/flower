@@ -4,19 +4,29 @@ import './Navbar.css'
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Flower</div>
+      <div className="navbar-logo">
+        <span>Flower</span>
+      </div>
       <ul className="navbar-links">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" className="navbar-link">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" className="navbar-link">
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/services">Services</Link>
+          <Link to="/services" className="navbar-link">
+            Services
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" className="navbar-link">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

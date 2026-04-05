@@ -5,6 +5,7 @@ import About from './views/About/About'
 import Contact from './views/Contact/Contact'
 import Services from './views/Services/Services'
 import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 
 const root = createRoot(document.getElementById('root'))
 
@@ -17,6 +18,6 @@ root.render(
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
+    <Footer />
   </BrowserRouter>,
 )
-

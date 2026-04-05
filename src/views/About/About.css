@@ -1,0 +1,30 @@
+.about {
+  text-align: center;
+  padding: 2rem;
+  color: #000;
+}
+
+.about h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 1.5rem;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: 1rem;
+  }
+
+  .about h1 {
+    font-size: 1.7rem;
+  }
+}

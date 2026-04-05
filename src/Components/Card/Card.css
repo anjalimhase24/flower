@@ -34,3 +34,44 @@
   margin: 0.5rem 0 0 0;
   line-height: 1.4;
 }
+
+.card-form,
+.card-map {
+  min-width: 0;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, #fff7dd 0%, #ffffff 100%);
+  border: 1px solid #f0d28a;
+  border-radius: 24px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+}
+
+.card-form .card-title,
+.card-map .card-title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.card-form .card-description,
+.card-map .card-description {
+  margin: 0.35rem 0 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 0.85rem;
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+  }
+
+  .card-form,
+  .card-map {
+    padding: 1rem;
+  }
+}

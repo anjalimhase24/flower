@@ -3,3 +3,65 @@
     padding: 20px;
     color: #000;
 }
+
+.services-label {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8f5a00;
+}
+
+.services h1 {
+    margin: 0.75rem 0;
+    font-size: 2.4rem;
+}
+
+.services-text {
+    max-width: 640px;
+    margin: 0 auto 2rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 16px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+    }
+
+    .services-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .services {
+        padding: 12px;
+    }
+
+    .services h1 {
+        font-size: 1.7rem;
+    }
+
+    .services-text {
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

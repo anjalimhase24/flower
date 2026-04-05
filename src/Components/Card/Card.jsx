@@ -1,11 +1,17 @@
 import './Card.css'
 
-function Card({ flower }) {
+function Card({ flower, title, description, image, alt, children, className = '' }) {
+  const cardTitle = title ?? flower?.name
+  const cardDescription = description ?? flower?.description
+  const cardImage = image ?? flower?.image
+  const imageAlt = alt ?? cardTitle ?? 'Card image'
+
   return (
-    <div className="card">
-      <img src={flower.image} alt={flower.name} className="card-image" />
-      <h3 className="card-title">{flower.name}</h3>
-      {flower.description && <p className="card-description">{flower.description}</p>}
+    <div className={`card ${className}`.trim()}>
+      {cardImage && <img src={cardImage} alt={imageAlt} className="card-image" />}
+      {cardTitle && <h3 className="card-title">{cardTitle}</h3>}
+      {cardDescription && <p className="card-description">{cardDescription}</p>}
+      {children}
     </div>
   )
 }

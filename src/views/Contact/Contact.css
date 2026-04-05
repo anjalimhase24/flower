@@ -1,5 +1,158 @@
-.contact{
+.contact {
+  padding: 2rem;
+  color: #000;
+}
+
+.contact-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-label {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8f5a00;
+}
+
+.contact h1 {
+  margin: 0.75rem 0;
+  font-size: 2.4rem;
+}
+
+.contact-text {
+  max-width: 620px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.card-form,
+.card-map {
+  text-align: left;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.9rem 1rem;
+  border: 1px solid #e4c474;
+  border-radius: 14px;
+  background: #fffdf6;
+  font: inherit;
+  color: #1b1a1a;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #c88a00;
+  box-shadow: 0 0 0 3px rgba(247, 181, 26, 0.2);
+}
+
+.contact-form button {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  border: 0;
+  border-radius: 14px;
+  padding: 0.95rem 1.1rem;
+  background: #f7b51a;
+  color: #1b1a1a;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-form button:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.map-frame {
+  overflow: hidden;
+  border-radius: 18px;
+  min-height: 420px;
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .contact {
+    padding: 1rem;
+  }
+
+  .contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-form,
+  .card-map {
     text-align: center;
-    padding: 20px;
-        color: #000;
+  }
+
+  .map-frame,
+  .map-frame iframe {
+    min-height: 320px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-label {
+    font-size: 0.8rem;
+  }
+
+  .contact h1 {
+    font-size: 1.7rem;
+  }
+
+  .contact-text {
+    font-size: 0.95rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .map-frame,
+  .map-frame iframe {
+    min-height: 280px;
+    height: 280px;
+  }
 }
